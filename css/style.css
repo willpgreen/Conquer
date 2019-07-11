@@ -25,6 +25,12 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
 header {
     width: 100%;
     height: 78vh;
@@ -33,6 +39,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 235px;
+    background-attachment: fixed;
 }
 
 /* Navbar */
@@ -98,30 +105,49 @@ header {
 #feature-area {
     border: 3px solid black;
     width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 #feature-area .feature-area-inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
+    border: 2px dotted red;
 }
 
 #feature-area .col-sm {
     border: 1px solid black;
 }
 
+#feature-area .feature-content {
+    background: #F2F2F2;
+    /* padding-bottom: 40px; */
+}
+
+#feature-area .feature-content-title {
+    text-align: left;
+    padding: 0 20px;
+}
+
+#feature-area .feature-content-description {
+    color: #333333;
+    text-align: left;
+    padding: 0 20px 35px;
+    margin-top: 15px;
+}
+
 /* Global */
 
 /* Container */
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+    margin: auto;
+    /* width: 90%; */
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 /* Showcases */
